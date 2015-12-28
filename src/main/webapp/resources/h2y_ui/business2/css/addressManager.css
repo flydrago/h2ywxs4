@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+
+.addressBgImg{
+	background-image:url(../images/fill_order_receiver_bg.png);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+
+.addrDefaultDiv {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url(../images/modify_order_address_selected.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

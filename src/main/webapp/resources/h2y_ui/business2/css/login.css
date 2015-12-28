@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+body{
+	-moz-user-select:none;
+	-webkit-user-select:none;
+}
+.loginUserIcon {
+	width: 100%;
+	text-align: center;
+	background-image: url(../images/login_user_icon_bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+button:active {
+	filter: alpha(opacity = 50); /*IE滤镜，透明度50%*/
+	-moz-opacity: 0.5; /*Firefox私有，透明度50%*/
+	opacity: 0.5; /*其他，透明度50%*/
+}
+
+.glyphicon:active {
+	filter: alpha(opacity = 50); /*IE滤镜，透明度50%*/
+	-moz-opacity: 0.5; /*Firefox私有，透明度50%*/
+	opacity: 0.5; /*其他，透明度50%*/
+}
+
+
+/* 去除type=number的箭头  开始 */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button
+	{
+	-webkit-appearance: none;
+}

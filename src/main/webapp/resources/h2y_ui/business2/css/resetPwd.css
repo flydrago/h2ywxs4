@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+.bottomDivBg{
+	background-image: url(../images/register_tip.png);
+	background-repeat: no-repeat;
+	background-size:98% 100%;
+	background-position:center center;
+}

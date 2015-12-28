@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.tab-content {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	border:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+
+#myTab {
+	width: 100%;
+	text-align: center;
+	height: 67px;
+	bottom:-1px;
+	padding:0;
+	margin:0;
+	border:none;
+	display:none;
+}
+
+.nav-pills>li.active>a>div, .nav-pills>li.active>a:focus>div, .nav-pills>li.active>a:hover>div {
+	width: 35px;
+	height: 100%;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+}
