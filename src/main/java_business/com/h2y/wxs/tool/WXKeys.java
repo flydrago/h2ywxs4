@@ -30,17 +30,6 @@ public class WXKeys {
 	
 	final static Logger logger = Logger.getLogger(WXKeys.class);
 
-	static {
-		PropertiesUtil mPropertiesUtil = PropertiesUtil.getInstance("/config.properties");
-
-		if (mPropertiesUtil != null) {
-			if (mPropertiesUtil.getValueByKey("wxs.appid") != null)
-				//appId = mPropertiesUtil.getValueByKey("wxs.appid");
-			if (mPropertiesUtil.getValueByKey("wxs.appscret") != null){
-				//appScret = mPropertiesUtil.getValueByKey("wxs.appscret");
-			}
-		}
-	}
 
 	/**
 	 * accessToken

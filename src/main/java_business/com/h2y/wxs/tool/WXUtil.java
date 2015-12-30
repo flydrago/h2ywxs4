@@ -22,10 +22,11 @@ public class WXUtil {
 	 * @param code
 	 * @return
 	 */
-	public static String getOauth(String code) {
+	public static String getOauth(String code,String appId,String appScret) {
 		log.debug("code==" + code);
-		String tokenByCode = WXKeys.Oauth.tokenByCodeUri + code;
-		String result = HttpTookit.doGet(tokenByCode, null);
+		
+		String tokenByCodeUri = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=" + appId + "&secret=" + appScret + "&grant_type=authorization_code&code="+ code;
+		String result = HttpTookit.doGet(tokenByCodeUri, null);
 		log.debug("result==" + result);
 		JSONObject obj = JSONObject.fromObject(result);
 		if (obj.containsKey("openid")) {

@@ -48,10 +48,8 @@ public class Home2Controller extends BaseController {
 			appId = ((Map<String,Object>)map2.get("resultData")).get("s3ucode").toString();
 			appSecret = ((Map<String,Object>)map2.get("resultData")).get("s3uname").toString();
 		}
-		WXKeys.appId = appId;
-		WXKeys.appScret = appSecret;
 		if (code != null && !code.equals("")) {
-			openId = WXUtil.getOauth(code);
+			openId = WXUtil.getOauth(code,appId,appSecret);
 			requet.setAttribute("errcode", "0");
 			String wxId = requet.getParameter("state");
 			requet.setAttribute("wxId", wxId);
